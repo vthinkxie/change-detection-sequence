@@ -17,9 +17,15 @@
     ],
     "component-selector": [
       true,
-      "element",
+      [
+        "attribute",
+        "element"
+      ],
       "app",
-      "kebab-case"
+      [
+        "camelCase",
+        "kebab-case"
+      ]
     ],
     "import-blacklist": [
       true,

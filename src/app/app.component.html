@@ -1,3 +1,11 @@
-<app-content-check>
-  <span *ngIf="hasContent">content</span>
-</app-content-check>
+<!--<app-copy [repeat]="5">-->
+<!--  <ng-container *appCopy><button>copy</button></ng-container>-->
+<!--</app-copy>-->
+
+
+<app-tabset>
+  <app-tab title="1" [active]="true"><app-eager>content 1</app-eager></app-tab>
+  <app-tab title="2" [active]="false"><app-eager>content 2</app-eager></app-tab>
+  <app-tab title="3" [active]="false"><app-eager>content 3</app-eager></app-tab>
+  <app-tab title="4" [active]="false"><app-eager>content 4</app-eager></app-tab>
+</app-tabset>

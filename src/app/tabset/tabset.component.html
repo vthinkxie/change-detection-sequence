@@ -1,0 +1,16 @@
+<ng-container *ngIf="listOfTabComponent">
+  TabHead
+  <ul>
+    <li *ngFor="let tab of listOfTabComponent">
+      {{tab.title}}
+    </li>
+  </ul>
+  <div>
+    Tab Content
+    <ng-container *ngFor="let tab of listOfTabComponent">
+     <div *ngIf="tab.active">
+       <ng-template [ngTemplateOutlet]="tab.template"></ng-template>
+     </div>
+   </ng-container>
+  </div>
+</ng-container>
