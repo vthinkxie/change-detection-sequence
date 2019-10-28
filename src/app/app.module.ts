@@ -2,19 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { MenuComponent } from './menu/menu.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
+import { ContentCheckComponent } from './content-check/content-check.component';
+import { ObserversModule } from '@angular/cdk/observers';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DropdownComponent,
-    MenuComponent,
-    MenuItemComponent
+    ContentCheckComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ObserversModule
   ],
   providers: [],
   bootstrap: [AppComponent]
