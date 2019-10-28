@@ -1,14 +1,21 @@
-<app-parent>
-  <app-child></app-child>
-</app-parent>
+<app-dropdown>
+  <app-menu>
+    <app-menu-item></app-menu-item>
+    <app-menu-item></app-menu-item>
+    <app-menu-item></app-menu-item>
+  </app-menu>
+</app-dropdown>
 
-<app-child></app-child>
+<br>
 
-<app-parent>
-  <app-child *ngIf="display"></app-child>
-</app-parent>
+<app-menu>
+  <app-menu-item></app-menu-item>
+  <app-menu-item></app-menu-item>
+  <app-menu-item></app-menu-item>
+</app-menu>
 
-<app-parent>
-  <ng-template [ngTemplateOutlet]="template"></ng-template>
-</app-parent>
-<ng-template #template><app-child></app-child></ng-template>
+<br>
+
+<app-menu-item></app-menu-item>
+<app-menu-item></app-menu-item>
+<app-menu-item></app-menu-item>

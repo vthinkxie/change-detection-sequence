@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls  : ['./app.component.css']
 })
 export class AppComponent {
-  display = false;
 
   constructor() {
-    setTimeout(() => this.display = true, 3000);
   }
 }
